@@ -114,7 +114,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="118" y="28" width="164" height="30"/>
+                                    <rect key="frame" x="152" y="280" width="166" height="30"/>
                                 </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJh-yP-CKZ">
@@ -123,18 +123,50 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="59" y="31" width="51" height="21"/>
+                                    <rect key="frame" x="93" y="284" width="51" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8x-xcc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm9-Yp-jWA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="358" width="38" height="30"/>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness Goals:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4u-Mb-KLt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="323" width="109" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummypic.png" translatesAutoresizingMaskIntoConstraints="NO" id="sg0-wH-PCc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="28" width="235" height="210"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Fitness Goals" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-5H-zja">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="320" width="166" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -142,6 +174,10 @@
                                 <exclude reference="fRJ-2B-vpd"/>
                                 <exclude reference="KJh-yP-CKZ"/>
                                 <exclude reference="QNa-8x-xcc"/>
+                                <exclude reference="Rm9-Yp-jWA"/>
+                                <exclude reference="R4u-Mb-KLt"/>
+                                <exclude reference="sg0-wH-PCc"/>
+                                <exclude reference="mKG-5H-zja"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -149,6 +185,10 @@
                                 <include reference="fRJ-2B-vpd"/>
                                 <include reference="KJh-yP-CKZ"/>
                                 <include reference="QNa-8x-xcc"/>
+                                <include reference="Rm9-Yp-jWA"/>
+                                <include reference="R4u-Mb-KLt"/>
+                                <include reference="sg0-wH-PCc"/>
+                                <include reference="mKG-5H-zja"/>
                             </mask>
                         </variation>
                     </view>
@@ -177,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dummypic.png" width="167" height="165"/>
         <image name="fatlogo.png" width="406" height="406"/>
     </resources>
 </document>

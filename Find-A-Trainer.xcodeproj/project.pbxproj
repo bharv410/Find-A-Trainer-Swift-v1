@@ -15,6 +15,7 @@
 		AD3C76B51A156F2C00E3E908 /* Find_A_TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C76B41A156F2C00E3E908 /* Find_A_TrainerTests.swift */; };
 		AD3C76BF1A15708600E3E908 /* fatlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3C76BE1A15708600E3E908 /* fatlogo.png */; };
 		AD3C76C11A157AB800E3E908 /* TrainerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C76C01A157AB800E3E908 /* TrainerSignUpViewController.swift */; };
+		ADF595AF1A1689BC006D5345 /* dummypic.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF595AE1A1689BC006D5345 /* dummypic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		AD3C76B41A156F2C00E3E908 /* Find_A_TrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_A_TrainerTests.swift; sourceTree = "<group>"; };
 		AD3C76BE1A15708600E3E908 /* fatlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fatlogo.png; sourceTree = "<group>"; };
 		AD3C76C01A157AB800E3E908 /* TrainerSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerSignUpViewController.swift; sourceTree = "<group>"; };
+		ADF595AE1A1689BC006D5345 /* dummypic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dummypic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		AD3C769C1A156F2B00E3E908 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ADF595AE1A1689BC006D5345 /* dummypic.png */,
 				AD3C76BE1A15708600E3E908 /* fatlogo.png */,
 				AD3C769D1A156F2B00E3E908 /* Info.plist */,
 			);
@@ -201,6 +204,7 @@
 			files = (
 				AD3C76A41A156F2B00E3E908 /* Main.storyboard in Resources */,
 				AD3C76A91A156F2B00E3E908 /* LaunchScreen.xib in Resources */,
+				ADF595AF1A1689BC006D5345 /* dummypic.png in Resources */,
 				AD3C76BF1A15708600E3E908 /* fatlogo.png in Resources */,
 				AD3C76A61A156F2B00E3E908 /* Images.xcassets in Resources */,
 			);

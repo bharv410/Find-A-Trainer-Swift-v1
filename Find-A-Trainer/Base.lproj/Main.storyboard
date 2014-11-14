@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1152" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Trainer Sign Up View Controller-->
         <scene sceneID="fqS-iu-DpY">
             <objects>
-                <viewController id="MUs-zD-fcL" sceneMemberID="viewController">
+                <viewController id="MUs-zD-fcL" customClass="TrainerSignUpViewController" customModule="Find_A_Trainer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ND1-CR-RDh"/>
                         <viewControllerLayoutGuide type="bottom" id="xuR-Wr-Jnl"/>
@@ -167,6 +167,18 @@
                                     <rect key="frame" x="152" y="320" width="166" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlU-5p-Ta5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Choose Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="151" y="242" width="98" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btnClicked" destination="MUs-zD-fcL" eventType="touchUpInside" id="5x3-cg-exE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -178,6 +190,7 @@
                                 <exclude reference="R4u-Mb-KLt"/>
                                 <exclude reference="sg0-wH-PCc"/>
                                 <exclude reference="mKG-5H-zja"/>
+                                <exclude reference="BlU-5p-Ta5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -189,9 +202,14 @@
                                 <include reference="R4u-Mb-KLt"/>
                                 <include reference="sg0-wH-PCc"/>
                                 <include reference="mKG-5H-zja"/>
+                                <include reference="BlU-5p-Ta5"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="chooseBuuton" destination="BlU-5p-Ta5" id="uHv-QV-Y76"/>
+                        <outlet property="imageView" destination="sg0-wH-PCc" id="DU3-tq-NeZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8j-Zb-bLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

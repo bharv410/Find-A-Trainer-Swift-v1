@@ -13,6 +13,8 @@
 		AD3C76A61A156F2B00E3E908 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3C76A51A156F2B00E3E908 /* Images.xcassets */; };
 		AD3C76A91A156F2B00E3E908 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD3C76A71A156F2B00E3E908 /* LaunchScreen.xib */; };
 		AD3C76B51A156F2C00E3E908 /* Find_A_TrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C76B41A156F2C00E3E908 /* Find_A_TrainerTests.swift */; };
+		AD3C76BF1A15708600E3E908 /* fatlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD3C76BE1A15708600E3E908 /* fatlogo.png */; };
+		AD3C76C11A157AB800E3E908 /* TrainerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3C76C01A157AB800E3E908 /* TrainerSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		AD3C76AE1A156F2C00E3E908 /* Find-A-TrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find-A-TrainerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3C76B31A156F2C00E3E908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD3C76B41A156F2C00E3E908 /* Find_A_TrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_A_TrainerTests.swift; sourceTree = "<group>"; };
+		AD3C76BE1A15708600E3E908 /* fatlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fatlogo.png; sourceTree = "<group>"; };
+		AD3C76C01A157AB800E3E908 /* TrainerSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainerSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				AD3C769E1A156F2B00E3E908 /* AppDelegate.swift */,
 				AD3C76A01A156F2B00E3E908 /* ViewController.swift */,
+				AD3C76C01A157AB800E3E908 /* TrainerSignUpViewController.swift */,
 				AD3C76A21A156F2B00E3E908 /* Main.storyboard */,
 				AD3C76A51A156F2B00E3E908 /* Images.xcassets */,
 				AD3C76A71A156F2B00E3E908 /* LaunchScreen.xib */,
@@ -90,6 +95,7 @@
 		AD3C769C1A156F2B00E3E908 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD3C76BE1A15708600E3E908 /* fatlogo.png */,
 				AD3C769D1A156F2B00E3E908 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					AD3C76981A156F2B00E3E908 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 55NN688S43;
 					};
 					AD3C76AD1A156F2C00E3E908 = {
 						CreatedOnToolsVersion = 6.1;
@@ -194,6 +201,7 @@
 			files = (
 				AD3C76A41A156F2B00E3E908 /* Main.storyboard in Resources */,
 				AD3C76A91A156F2B00E3E908 /* LaunchScreen.xib in Resources */,
+				AD3C76BF1A15708600E3E908 /* fatlogo.png in Resources */,
 				AD3C76A61A156F2B00E3E908 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3C76A11A156F2B00E3E908 /* ViewController.swift in Sources */,
+				AD3C76C11A157AB800E3E908 /* TrainerSignUpViewController.swift in Sources */,
 				AD3C769F1A156F2B00E3E908 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +345,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Find-A-Trainer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +357,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Find-A-Trainer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +418,7 @@
 				AD3C76BA1A156F2C00E3E908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD3C76BB1A156F2C00E3E908 /* Build configuration list for PBXNativeTarget "Find-A-TrainerTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +427,7 @@
 				AD3C76BD1A156F2C00E3E908 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

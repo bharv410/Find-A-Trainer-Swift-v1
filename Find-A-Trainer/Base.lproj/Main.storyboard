@@ -143,6 +143,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="358" width="38" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="saveUser" destination="MUs-zD-fcL" eventType="touchUpInside" id="DrA-AH-1dH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness Goals:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4u-Mb-KLt">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -208,7 +211,9 @@
                     </view>
                     <connections>
                         <outlet property="chooseBuuton" destination="BlU-5p-Ta5" id="uHv-QV-Y76"/>
+                        <outlet property="goalsTextField" destination="mKG-5H-zja" id="BmK-6b-MaL"/>
                         <outlet property="imageView" destination="sg0-wH-PCc" id="DU3-tq-NeZ"/>
+                        <outlet property="nameTextField" destination="fRJ-2B-vpd" id="beG-es-vZv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8j-Zb-bLa" userLabel="First Responder" sceneMemberID="firstResponder"/>

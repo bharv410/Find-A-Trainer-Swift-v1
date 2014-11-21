@@ -8,11 +8,15 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 class TrainerSignUpViewController: UIViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate{
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var chooseBuuton: UIButton!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var goalsTextField: UITextField!
     var imagePicker = UIImagePickerController()
+    var imageFile: PFFile!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,14 @@ class TrainerSignUpViewController: UIViewController, UINavigationControllerDeleg
         })
         
         imageView.image = image
+        var imageBytes = UIImagePNGRepresentation(imageView.image)
+        imageFile = PFFile(name: "pic.png", data: imageBytes)
+        imageFile.saveInBackgroundWithBlock{(success: Bool, error: NSError!) -> Void in
+            if success {
+                println("Saved")
+            } else {
+                println("Error")
+            }}
     }
     
     @IBAction func btnClicked(){
@@ -44,6 +56,29 @@ class TrainerSignUpViewController: UIViewController, UINavigationControllerDeleg
             imagePicker.allowsEditing = false
             
             self.presentViewController(imagePicker, animated: true, completion: nil)
+        }
+        
+    }
+    
+    
+    @IBAction func saveUser(){
+        var object:PFObject = PFObject(className: "Trainee")
+        var name:String = nameTextField.text
+        var goals:String = goalsTextField.text
+        
+        object.setObject(String(name), forKey: "name")
+        
+        object.setObject(String(goals), forKey: "goals")
+        
+        
+        if(imageFile != nil){
+            object.setObject(imageFile, forKey: "pic")
+            object.saveInBackgroundWithBlock{(success: Bool, error: NSError!) -> Void in
+                if success {
+                    println("Saved it!!!!!")
+                } else {
+                    println("Error")
+                }}
         }
         
     }

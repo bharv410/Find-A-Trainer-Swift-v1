@@ -58,8 +58,19 @@ class TrainerSignUpViewController: UIViewController, UINavigationControllerDeleg
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
         
-    }
-    
+        //queryes list of trainees
+        
+        var query = PFQuery(className: "Trainee")
+        query.findObjectsInBackgroundWithBlock({(NSArray objects, NSError error) in
+            if (error != nil) {
+                NSLog("error " + error.localizedDescription)
+            }
+            else {
+                
+                var results:NSArray = NSArray(array: objects)
+                println(results.count)
+            }
+        })}
     
     @IBAction func saveUser(){
         var object:PFObject = PFObject(className: "Trainee")
